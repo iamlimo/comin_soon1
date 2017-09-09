@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            background-color: #E3E2DF;
+        }
+        
+        .logo>img {
+            width: 150px;
+            margin-top: 40px;
+        }
+        
+        .slant {
+            color: #E3AFBC;
+        }
+        
+        #launch {
+            color: white;
+            margin-top: 250px;
+            font-family: 'Lato', sans-serif;
+            font-size: 40px;
+            background-color: #9A1750;
+        }
+        
+        #launch2 {
+            margin-top: 230px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 60px;
+            color: #FFD800;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .timer {
+            display: inline-block;
+            color: #5D001E;
+            font-size: 60px;
+        }
+        
+        .contain {
+            font-family: 'Orbitron', sans-serif;
+            position: relative;
+            font-size: 50px;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        #launch1 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: wheat;
+            font-size: 40px;
+            background-color: #E3AFBC;
+            margin-top: -10px;
+        }
+        
+        .col-centered {
+            float: none;
+            margin: 0 auto;
+        }
+        
+        .social {
+            position: relative;
+            right: 30px;
+            color: #fff;
+            font-size: 30px;
+        }
+        
+        .fa {
+            font-size: 50px;
+        }
+        
+        .fa-facebook-square {
+            color: #3b5998;
+        }
+        
+        .fa-twitter-square {
+            color: #00b6f1;
+        }
+        
+        .fa-instagram {
+            color: #ffdc7d;
+        }
+        
+        .fa-globe {
+            color: #cd3b28;
+            font-size: 50px;
+        }
+        
+        hr {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" id="slant">
+                <div class="logo">
+                    <img src="bantu%20montana%20new.png">
+                    <p class="text-center" id="launch">We are busy working on something awesome.</p>
+                    <p class="text-center" id="launch1">Our website is under construction.</p>
+                    <hr width="100">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p class="text-center" id="launch2">We are LAUNCHING in:</p>
+                <div class="contain">
+                    <div class="timer" id="Days"></div>
+                    <div class="timer" id="Hours"></div>
+                    <div class="timer" id="Mins"></div>
+                    <div class="timer" id="Secs"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="social col-centered text-center">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-globe" aria-hidden="true"></i>
+
+        </div>
+    </div>
+
+    <script>
+        var launchDate = new Date("September 30, 2017 11:13:00").getTime();
+        var timer = setInterval(function() {
+            var currentTime = new Date().getTime();
+
+            var diff = launchDate - currentTime;
+            var launchDay, launchHour, minutes, launchSecs;
+
+            var launchDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var launchHour = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+
+            var countDay, countHour, countMins, countSecs;
+            var countDay = "";
+
+            countDay = $("#Days").text(launchDay + " :")
+            countHour = $("#Hours").text(launchHour + " :")
+            countMins = $("#Mins").text(minutes + " :")
+            countSecs = $("#Secs").text(seconds)
+
+        }, 1000)
+
+    </script>
+
+
+    <body>
+
+
+
+    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/2a59342ccf.js"></script>
+
+</html>
