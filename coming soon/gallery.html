@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            background-color: #fff;
+        }
+        
+        .hide-bullets {
+            list-style: none;
+            margin-left: -40px;
+            margin-top: 20px;
+        }
+        
+        .thumbnail {
+            padding: 0;
+        }
+        
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 100%;
+        }
+        
+        .container {
+            margin-top: 30px;
+            background: #000;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .logo {
+            padding: 20px;
+            background: #fff;
+            width: 250px;
+            margin-top: -10px;
+        }
+        
+        .button {
+            display: inline-block;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            border: none;
+            font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: normal;
+            text-align: center;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            white-space: pre;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+            -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        
+        .button:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="bantu%20montana%20new.png" width="200px;">
+        </div>
+
+        <div id="main_area">
+            <!--<div class="button text-center">Neon Glow
+</div>-->
+            <!-- Slider -->
+            <div class="row">
+                <div class="col-sm-6" id="slider-thumbs">
+                    <!-- Bottom switcher of slider -->
+                    <ul class="hide-bullets">
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-0">
+                                <img src="http://res.cloudinary.com/hvac/image/upload/v1505060537/15_aahgzk.jpg">
+                            </a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-1"><img src="http://res.cloudinary.com/hvac/image/upload/v1505060900/16_eovb3s.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-2"><img src="http://res.cloudinary.com/hvac/image/upload/v1505060373/13_kkzkz0.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-3"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063221/9A_omhhjz.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-4"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063255/19B_ckezph.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-5"><img src="http://res.cloudinary.com/hvac/image/upload/v1505060657/14_a71hzi.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-6"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063764/10B_nvyxma.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-7"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063740/7B_ocseoz.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-8"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063727/4_uvyndf.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-9"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063727/4_uvyndf.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-10"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063920/45_qwca0l.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-11"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063838/46A_xovzid.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-12"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063803/21_lbvsrd.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-13"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063947/42_bagcac.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-14"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063947/43_bo7nv8.jpg"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-15"><img src="http://res.cloudinary.com/hvac/image/upload/v1505063266/TWO_A_bm9kxk.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505060537/15_aahgzk.jpg"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505060900/16_eovb3s.jpg"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505060373/13_kkzkz0.jpg"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063221/9A_omhhjz.jpg"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063255/19B_ckezph.jpg"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505060657/14_a71hzi.jpg"></div>
+
+                                        <div class="item" data-slide-number="6">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063764/10B_nvyxma.jpg"></div>
+
+                                        <div class="item" data-slide-number="7">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063740/7B_ocseoz.jpg"></div>
+
+                                        <div class="item" data-slide-number="8">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063727/4_uvyndf.jpg"></div>
+
+                                        <div class="item" data-slide-number="9">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063727/4_uvyndf.jpg"></div>
+
+                                        <div class="item" data-slide-number="10">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063920/45_qwca0l.jpg"></div>
+
+                                        <div class="item" data-slide-number="11">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063838/46A_xovzid.jpg"></div>
+
+                                        <div class="item" data-slide-number="12">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063803/21_lbvsrd.jpg"></div>
+
+                                        <div class="item" data-slide-number="13">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063947/42_bagcac.jpg"></div>
+
+                                        <div class="item" data-slide-number="14">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063947/43_bo7nv8.jpg"></div>
+
+                                        <div class="item" data-slide-number="15">
+                                            <img src="http://res.cloudinary.com/hvac/image/upload/v1505063266/TWO_A_bm9kxk.jpg"></div>
+                                    </div>
+                                    <!-- Carousel nav -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Slider-->
+            </div>
+
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('#myCarousel').carousel({
+                interval: 5000
+            });
+
+            //Handles the carousel thumbnails
+            $('[id^=carousel-selector-]').click(function() {
+                var id_selector = $(this).attr("id");
+                try {
+                    var id = /-(\d+)$/.exec(id_selector)[1];
+                    console.log(id_selector, id);
+                    jQuery('#myCarousel').carousel(parseInt(id));
+                } catch (e) {
+                    console.log('Regex failed!', e);
+                }
+            });
+            // When the carousel slides, auto update the text
+            $('#myCarousel').on('slid.bs.carousel', function(e) {
+                var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-' + id).html());
+            });
+        });
+
+    </script>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/2a59342ccf.js"></script>
+
+</html>
